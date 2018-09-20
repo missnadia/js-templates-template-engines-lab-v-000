@@ -4,6 +4,7 @@ function createPost() {
   var postTemplate = _.template(document.getElementById("post-template").innerHTML);
   var postTitle = document.getElementById("postTitle");
   var post = document.getElementById("postContent").innerHTML;
+  document.getElementsByTagName("main")[0].innerHTML += pageTemplate();
 }
 
 function postComment() {
