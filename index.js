@@ -1,13 +1,13 @@
 function createPost() {
   var postForm = document.getElementById("post-form");
   var pageTemplate = _.template(document.getElementById("page-template").innerHTML);
-  var postTemplate = document.getElementById("post-template").innerHTML;
+  var postTemplate = _.template(document.getElementById("post-template").innerHTML);
   var postTitle = document.getElementById("postTitle");
   var postContent = document.getElementById("postContent").innerHTML;
 }
 
 function postComment() {
-  var commentTemplate = document.getElementById("comment-template").innerHTML;
+  var commentTemplate = _.template(document.getElementById("comment-template").innerHTML);
   var commenter = document.getElementById("commenterName").value;
   var comment = document.getElementById("commentText").value;
   var commentTemplate = document.getElementById("comment-template").innerHTML;
