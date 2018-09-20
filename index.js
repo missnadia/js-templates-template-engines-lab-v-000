@@ -3,7 +3,7 @@ function createPost() {
   var pageTemplate = _.template(document.getElementById("page-template").innerHTML);
   var postTemplate = _.template(document.getElementById("post-template").innerHTML);
   var postTitle = document.getElementById("postTitle");
-  var postContent = document.getElementById("postContent").innerHTML;
+  var post = document.getElementById("postContent").innerHTML;
 }
 
 function postComment() {
