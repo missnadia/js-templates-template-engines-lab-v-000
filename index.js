@@ -2,6 +2,7 @@ function createPost() {
   var postForm = document.getElementById("post-form");
   var pageTemplate = document.getElementById("page-template").innerHTML;
   var postTemplate = document.getElementById("post-template").innerHTML;
+  var commentTemplate = document.getElementById("comment-template").innerHTML;
 }
 
 function postComment() {
