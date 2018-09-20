@@ -7,13 +7,13 @@ function createPost() {
   var post = document.getElementById("postContent").innerHTML;
   document.getElementsByTagName("main")[0].innerHTML += pageTemplate();
 
-  var blogSection = postTemplate({ 'title': postTitle, 'content': post });
+  var postDiv = postTemplate({ 'title': postTitle, 'content': post });
   var commentsDiv = commentsTemplate();
   var postContent = document.getElementById("post");
 
-  postContent.innerHTML = blogSection;
+  postContent.innerHTML = postDiv;
   postContent.getElementsByTagName("footer")[0].innerHTML = commentsDiv;
-  
+
 }
 
 function postComment() {
