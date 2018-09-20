@@ -10,8 +10,8 @@ function createPost() {
 
 function postComment() {
   var commentTemplate = _.template(document.getElementById("comment-template").innerHTML);
-  var commenter = document.getElementById("commenterName").value;
-  var comment = document.getElementById("commentText").value;
+  var commenterName = document.getElementById("commenterName").value;
+  var commentText = document.getElementById("commentText").value;
   var commentTemplate = document.getElementById("comment-template").innerHTML;
   var templateFn = _.template(commentTemplate);
   var commentsDiv = document.getElementById("comments");
