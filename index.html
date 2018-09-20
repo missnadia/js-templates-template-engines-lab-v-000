@@ -5,6 +5,8 @@
   </head>
   <body>
     <main>
+      <form id="post-form" onSubmit="createPost()">
+      </form>
     </main>
     <script src="node_modules/lodash/lodash.min.js"></script>
     <script src="index.js"></script>
@@ -20,9 +22,9 @@
     </script>
     <script id="comments-template" type="text/x-lodash-template">
       <div id="comments">
-        <form onSubmit="postComment()">
-          Add comment: <input type="text" id="commentText"><br>
-          Your name: <input type="text" id="commenterName"><br>
+        <form onSubmit="postComment();return false;">
+          Name: <input type="text" id="commenterName"><br>
+          Comment: <input type="textarea" id="commentText"><br>
           <input type="submit">
         </form>
       </div>
