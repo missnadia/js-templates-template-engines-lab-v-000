@@ -1,5 +1,5 @@
 function createPost() {
-  var postForm = document.getElementById("post-form")
+  var postForm = document.getElementById("post-form");
 }
 
 function postComment() {
